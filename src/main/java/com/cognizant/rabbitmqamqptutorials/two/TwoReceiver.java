@@ -2,11 +2,9 @@ package com.cognizant.rabbitmqamqptutorials.two;
 
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Component;
 import org.springframework.util.StopWatch;
 
-@RabbitListener(queues = "hello")
+@RabbitListener(queues = "${tutorial.queue}")
 final class TwoReceiver {
     private final int instance;
 

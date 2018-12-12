@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 class TwoConfiguration {
     @Bean
-    public Queue hello(@Value("${tutorial.queue:hello}") final String queueName) {
+    public Queue hello(@Value("${tutorial.queue}") final String queueName) {
+        System.out.println("\n"+queueName+"\n");
         return new Queue(queueName);
     }
 

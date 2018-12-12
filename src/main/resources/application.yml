@@ -7,6 +7,6 @@ logging:
     org: ERROR
 
 tutorial:
-  queue: hello
+  queue: world
   client:
     duration: 10000
