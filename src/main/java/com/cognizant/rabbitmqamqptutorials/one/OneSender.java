@@ -17,7 +17,8 @@ final class OneSender {
     private final Queue queue;
     private final RabbitTemplate template;
 
-    OneSender(@Value("q2") final Queue queue, final RabbitTemplate template) {
+    //Add @Value("hello") before Queue to chose between different queue beans
+    OneSender( final Queue queue, final RabbitTemplate template) {
         this.queue = queue;
         this.template = template;
     }
