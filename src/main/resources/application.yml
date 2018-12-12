@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: show_usage_message
+
+logging:
+  level:
+    org: ERROR
+
+tutorial:
+  queue: hello
+  client:
+    duration: 10000
