@@ -20,11 +20,13 @@ class TwoConfiguration {
 
         @Bean
         public TwoReceiver receiver1() {
+            System.out.println("========-------> receiver 1");
             return new TwoReceiver(1);
         }
 
         @Bean
         public TwoReceiver receiver2() {
+            System.out.println("========-------> receiver 2");
             return new TwoReceiver(2);
         }
     }
